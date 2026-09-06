@@ -2633,6 +2633,17 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
 
   window.addEventListener('resize',hints);
 
+  window.addEventListener('hashchange',function(){
+    var w=(location.hash||'').replace('#','');
+    if(!w) return;
+    sheets.forEach(function(s,k){
+      if(s.getAttribute('data-no')===w && k!==i){
+        i=k;
+        if(mode==='scroll'){sheets[k].scrollIntoView({block:'start'}); stamp(); hints();} else {render();}
+      }
+    });
+  });
+
   var want=(location.hash||'').replace('#','');
   if(want){ sheets.forEach(function(s,k){ if(s.getAttribute('data-no')===want){ i=k; } }); }
 
