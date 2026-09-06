@@ -369,7 +369,7 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
   <button class="btn" id="idxBtn">Index</button>
   <button class="btn" id="modeBtn" aria-pressed="false">Scroll view</button>
   <button class="btn" id="prev" aria-label="Previous sheet">Prev</button>
-  <div class="count" id="count">01 / 36</div>
+  <div class="count" id="count">01 / 38</div>
   <button class="btn" id="next" aria-label="Next sheet">Next</button>
 </div>
 <div class="prog"><i id="prog"></i></div>
@@ -381,7 +381,7 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
 
 <div class="tbar" id="tbar">
   <button class="btn" id="tprev">Prev</button>
-  <div class="count" id="tcount">01 / 36</div>
+  <div class="count" id="tcount">01 / 38</div>
   <button class="btn" id="tnext">Next</button>
 </div>
 
@@ -459,7 +459,7 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
       <li><span class="n">02</span><div><b>So the product is a parameter graph, not a chatbot.</b>
         <span>Every value an expert or vertical owner would have said in a meeting becomes a typed, versioned, owned entry in one Project Parameter Graph. Agents read and write only that. Drawings are a rendering of it.</span></div></li>
       <li><span class="n">03</span><div><b>Agents speak operations, not raw geometry.</b>
-        <span>Agents emit typed operations &mdash; <code>route_containment</code>, <code>place_device_array</code>, <code>generate_sheet</code> &mdash; executed by Revit, AutoCAD or IFC toolchains, so every action is replayable, diffable and attributable. Each agent stands in for one named desk role, and AR-302A prices how much of that role&#8217;s day it absorbs.</span></div></li>
+        <span>Agents emit typed operations &mdash; <code>route_containment</code>, <code>place_device_array</code>, <code>generate_sheet</code> &mdash; executed by Revit, AutoCAD or IFC toolchains, so every action is replayable, diffable and attributable. Each agent stands in for one named desk role; AR-302A and AR-302B set out how much of that role&#8217;s day it absorbs.</span></div></li>
       <li><span class="n">04</span><div><b>Verification is the product, generation is the commodity.</b>
         <span>Generation is now cheap and getting cheaper. What a top agency sells is a set someone will stamp. Build the checking layer first &mdash; IDS rule packs, clash, code compliance, drawing-standards QA &mdash; and generation can be swapped out yearly.</span></div></li>
       <li><span class="n">05</span><div><b>Seven integrations are non-negotiable. Everything else can wait.</b>
@@ -959,7 +959,7 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
     <div class="grid4" style="margin-top:18px; max-width:900px">
       <div class="panel"><p class="lbl b">TH-201</p><p style="margin:0; font-size:13px">The generation pipeline</p></div>
       <div class="panel"><p class="lbl b">TH-202</p><p style="margin:0; font-size:13px">The Project Parameter Graph</p></div>
-      <div class="panel"><p class="lbl b">AR-300&ndash;303</p><p style="margin:0; font-size:13px">Architecture, agent roster, role substitution, CAD verbs</p></div>
+      <div class="panel"><p class="lbl b">AR-300&ndash;303A</p><p style="margin:0; font-size:13px">Architecture, agent roster, role substitution, CAD verbs</p></div>
       <div class="panel"><p class="lbl b">AR-304&ndash;306</p><p style="margin:0; font-size:13px">Worked trace, autonomy, guardrails</p></div>
     </div>
   </div>
@@ -1260,7 +1260,7 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
   <div class="sheet-body">
     <p class="eyebrow">Part B / AR-301 / Agents 1&ndash;13</p>
     <h2 class="t">The agent roster, 1 of 2</h2>
-    <p class="dek">Each agent stands in for a named role that exists on the org chart today. Sheet AR-302A maps every agent to that role and prices what it absorbs. The autonomy column is the POC target, not the ceiling &mdash; see AR-305 for the ladder.</p>
+    <p class="dek">Each agent stands in for a named role that exists on the org chart today. Sheets AR-302A and AR-302B map every agent to that role and price what it absorbs. The autonomy column is the POC target, not the ceiling &mdash; see AR-305 for the ladder.</p>
 
     <div class="tbl-wrap">
       <table>
@@ -1343,35 +1343,53 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
   </div>
 </section>
 
-<section class="sheet" data-no="AR-302A" data-title="Role substitution map &amp; savings">
+<section class="sheet" data-no="AR-302A" data-title="Role substitution map">
   <div class="sheet-body">
     <p class="eyebrow">Part B / AR-302A / Which desk each agent sits at</p>
     <h2 class="t">Role substitution map</h2>
-    <p class="dek">Every agent stands in for a specific role that exists on your org chart today. This sheet names that role, says exactly which part of its working day the software takes, what stays with the person, and what that is worth. <strong>Absorption figures are modelled estimates, not measurements</strong> &#8212; PL-409 applies.</p>
+    <p class="dek">Every agent stands in for a specific role that exists on your org chart today. This sheet names that role, says which part of its working day the software takes and what stays with the person. AR-302B turns the same rows into capacity and money.</p>
 
     <div class="tbl-wrap">
-      <table style="min-width:840px">
+      <table style="min-width:860px">
         <thead><tr>
-          <th style="width:17%">Role the software assumes</th><th class="m" style="width:9%">Agents</th>
-          <th style="width:23%">What the agent takes over</th><th style="width:23%">What stays with the person</th>
-          <th class="m" style="width:14%">Absorbed at POC</th><th class="m" style="width:14%">Absorbed at maturity</th>
+          <th style="width:18%">Role the software assumes</th><th class="m" style="width:10%">Agents</th>
+          <th style="width:25%">What the agent takes over</th><th style="width:25%">What stays with the person</th>
+          <th class="m" style="width:11%">At POC</th><th class="m" style="width:11%">At maturity</th>
         </tr></thead>
         <tbody>
           <tr><td><strong>ELV / MEP CAD draftsman</strong><br><span style="color:var(--muted); font-size:12px">Production grade &#8212; the biggest single cost line</span></td><td class="m">08, 11, 14, 15, 16, 17</td><td>Containment runs, cable schedules, view and sheet creation, dimensioning, tagging, legends, revision clouds</td><td>Judgement on unusual conditions, the drawings nobody has drawn before, site-driven adaptation</td><td class="m">15&#8201;%</td><td class="m">50&#8201;%</td></tr>
-          <tr><td><strong>ELV / electrical design engineer</strong><br><span style="color:var(--muted); font-size:12px">Discipline grade</span></td><td class="m">06, 07, 09, 10, 12</td><td>Load and cable sizing with proof, device placement against coverage rules, riser and rack layouts, IO matrices</td><td>System strategy, vendor judgement, anything requiring a stamp, the call on a rule that does not fit</td><td class="m">5&#8201;%</td><td class="m">30&#8201;%</td></tr>
+          <tr><td><strong>ELV / electrical design engineer</strong></td><td class="m">06, 07, 09, 10, 12</td><td>Load and cable sizing with proof, device placement against coverage rules, riser and rack layouts, IO matrices</td><td>System strategy, vendor judgement, anything requiring a stamp, the call on a rule that does not fit</td><td class="m">5&#8201;%</td><td class="m">30&#8201;%</td></tr>
           <tr><td><strong>BIM coordinator</strong><br><span style="color:var(--muted); font-size:12px">Federation and clash</span></td><td class="m">13, 18, 19</td><td>Clash running, grouping, triage and assignment; IDS validation; penetration scheduling</td><td>Chairing coordination, negotiating who moves, sequencing the resolution</td><td class="m">20&#8201;%</td><td class="m">45&#8201;%</td></tr>
-          <tr><td><strong>CAD manager / drawing checker</strong><br><span style="color:var(--muted); font-size:12px">QA grade &#8212; highest absorption of any role</span></td><td class="m">21, 22</td><td>Numbering, title blocks, layers, scales, north points, sheet completeness, drawing-to-schedule-to-spec consistency</td><td>Setting the standard in the first place; deciding when to depart from it</td><td class="m">25&#8201;%</td><td class="m">55&#8201;%</td></tr>
+          <tr><td><strong>CAD manager / drawing checker</strong><br><span style="color:var(--muted); font-size:12px">Highest absorption of any role</span></td><td class="m">21, 22</td><td>Numbering, title blocks, layers, scales, north points, sheet completeness, drawing-to-schedule-to-spec consistency</td><td>Setting the standard in the first place; deciding when to depart from it</td><td class="m">25&#8201;%</td><td class="m">55&#8201;%</td></tr>
           <tr><td><strong>Document controller</strong><br><span style="color:var(--muted); font-size:12px">CDE administration</span></td><td class="m">17, 23</td><td>Submittal assembly against checklists, transmittals, status codes, register reconciliation</td><td>Relationships with the consultant and authority desks; chasing</td><td class="m">5&#8201;%</td><td class="m">50&#8201;%</td></tr>
           <tr><td><strong>Information / BIM manager</strong></td><td class="m">02, 03</td><td>BEP, MIDP, TIDP and IDS drafting; parameter registration from minutes and calc sheets</td><td>Negotiating the EIR, enforcing the standard across appointed parties</td><td class="m">5&#8201;%</td><td class="m">35&#8201;%</td></tr>
           <tr><td><strong>Project engineer</strong><br><span style="color:var(--muted); font-size:12px">RFIs and technical queries</span></td><td class="m">24</td><td>RFI drafting from flagged ambiguities; routing responses back into the model</td><td>Every RFI that leaves the office, and the commercial consequence of asking it</td><td class="m">0&#8201;%</td><td class="m">25&#8201;%</td></tr>
           <tr><td><strong>Fire &amp; code compliance checker</strong></td><td class="m">20</td><td>Rule-pack execution over the model: spacing, travel distance, segregation, derating</td><td>Interpretation, authority correspondence, the fire strategy itself</td><td class="m">10&#8201;%</td><td class="m">30&#8201;%</td></tr>
           <tr><td><strong>Design manager / QA lead</strong></td><td class="m">25</td><td>Audit trail, gate-risk escalation, blast-radius reporting on change</td><td>Priorities, client conversations, the decision to accept risk</td><td class="m">5&#8201;%</td><td class="m">20&#8201;%</td></tr>
-          <tr><td><strong>Architect / space planner</strong><br><span style="color:var(--muted); font-size:12px">Outside POC scope</span></td><td class="m">04, 05</td><td>Layout options against adjacency rules, service zone reservation</td><td>All of it, in practice. Layout is judgement wearing a spreadsheet</td><td class="m">&#8212;</td><td class="m">15&#8201;%</td></tr>
+          <tr><td><strong>Architect / space planner</strong><br><span style="color:var(--muted); font-size:12px">TBD &#8212; not assessed for this POC</span></td><td class="m">04, 05</td><td>Layout options against adjacency rules, service zone reservation</td><td>Most of it, in practice. Layout is judgement wearing a spreadsheet</td><td class="m">&#8212;</td><td class="m">15&#8201;%</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="grid2" style="margin-top:18px">
+    <p class="note">Absorption is the share of that role&#8217;s working day the software carries. Figures are modelled estimates, not measurements &#8212; PL-409 applies, and Gate 1 replaces them with your own timesheet data.</p>
+  </div>
+  <div class="titleblock">
+    <div><b>Project</b><s>Agentic Design Delivery</s></div>
+    <div><b>Sheet title</b><s>Role substitution map</s></div>
+    <div><b>Sheet no.</b><s>AR-302A</s></div>
+    <div><b>Rev</b><s>P05</s></div>
+    <div><b>Status</b><s>S3</s></div>
+    <div><b>Date</b><s>2026-09-06</s></div>
+  </div>
+</section>
+
+<section class="sheet" data-no="AR-302B" data-title="Capacity released &amp; savings">
+  <div class="sheet-body">
+    <p class="eyebrow">Part B / AR-302B / What the role map is worth</p>
+    <h2 class="t">Capacity released</h2>
+    <p class="dek">The same roles as AR-302A, applied to a reference production team, in capacity and then in money.</p>
+
+    <div class="grid2">
       <div>
         <p class="lbl">Share of each role&#8217;s working day absorbed</p>
         <div class="bars">
@@ -1388,13 +1406,18 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
           <span><i class="b"></i>At POC, week 22</span>
           <span><i class="o"></i>At full maturity, horizon 2</span>
         </div>
+
+        <div class="panel blue" style="margin-top:16px">
+          <p class="lbl b">Capacity released is not the same as cost saved</p>
+          <p style="margin:0; font-size:13px">Released capacity becomes a saving only if you reduce the team, and becomes throughput if you keep it and take more work. This deck recommends throughput: the same people delivering more packages, with the checking layer catching what tired people miss at 11 pm.</p>
+        </div>
       </div>
 
       <div>
-        <p class="lbl o">Capacity released &#8212; reference package</p>
+        <p class="lbl o">Reference package &#8212; FTE released</p>
         <div class="tbl-wrap" style="margin-bottom:12px">
           <table style="min-width:0">
-            <thead><tr><th style="width:46%">Reference production team</th><th class="m" style="width:18%">FTE</th><th class="m" style="width:18%">POC</th><th class="m" style="width:18%">Mature</th></tr></thead>
+            <thead><tr><th style="width:46%">Production team</th><th class="m" style="width:18%">FTE</th><th class="m" style="width:18%">POC</th><th class="m" style="width:18%">Mature</th></tr></thead>
             <tbody>
               <tr><td>CAD draftsman</td><td class="m">5.0</td><td class="m">0.75</td><td class="m">2.50</td></tr>
               <tr><td>Design engineer</td><td class="m">3.0</td><td class="m">0.15</td><td class="m">0.90</td></tr>
@@ -1410,43 +1433,34 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
             </tbody>
           </table>
         </div>
-        <p class="note" style="margin-top:0">Reference package: ELV and electrical for a mid-rise commercial building, detailed design through shop drawings. Scale the numbers to your own team; the ratios are what travel.</p>
+
+        <div class="panel ochre">
+          <p class="lbl o">What 6.0 FTE released is worth</p>
+          <p style="margin:0 0 6px; font-size:13px">Rate-agnostic, because it is your rate card, not ours:</p>
+          <p style="margin:0; font-family:var(--f-mono); font-size:12px; line-height:1.8">at &#8377;12L per FTE-year &#8594; <strong>&#8377;72L / yr</strong><br>at &#8377;45L per FTE-year &#8594; <strong>&#8377;2.7 Cr / yr</strong></p>
+          <p style="margin:8px 0 0; font-size:12px; color:var(--muted)">At POC maturity the same package releases 1.7 FTE, or &#8377;20L to &#8377;77L a year.</p>
+        </div>
       </div>
     </div>
 
-    <div class="grid3" style="margin-top:16px">
-      <div class="panel ochre">
-        <p class="lbl o">What 6.0 FTE released is worth</p>
-        <p style="margin:0 0 6px; font-size:13px">Rate-agnostic, because it is your rate card, not ours:</p>
-        <p style="margin:0; font-family:var(--f-mono); font-size:12px; line-height:1.8">at &#8377;12L per FTE-year &#8594; <strong>&#8377;72L / yr</strong><br>at &#8377;45L per FTE-year &#8594; <strong>&#8377;2.7 Cr / yr</strong></p>
-        <p style="margin:8px 0 0; font-size:12px; color:var(--muted)">Two illustrative rate points &#8212; offshore production and locally-based staff. At POC maturity the same package releases 1.7 FTE, or &#8377;20L to &#8377;77L a year.</p>
-      </div>
-      <div class="panel blue">
-        <p class="lbl b">Capacity released is not the same as cost saved</p>
-        <p style="margin:0; font-size:13px">Released capacity becomes a saving only if you reduce the team, and becomes throughput if you keep it and take more work. This deck recommends throughput: the same people delivering more packages, with the checking layer catching what tired people miss at 11 pm. The redundancy version is available to you and is not what we are proposing.</p>
-      </div>
-      <div class="panel red">
-        <p class="lbl r">Where these numbers come from</p>
-        <p style="margin:0; font-size:13px">Task-time decomposition of each role against the operation set on AR-304, cross-checked with the effort split on PR-107. They are <strong>modelled estimates</strong>. Gate 1 replaces them with your own timesheet data, and every figure here should be expected to move once it does.</p>
-      </div>
-    </div>
+    <p class="note">Reference package: ELV and electrical for a mid-rise commercial building, detailed design through shop drawings. Scale to your own team; the ratios are what travel. Figures are modelled estimates from task-time decomposition, cross-checked against PR-107 &#8212; not measurements.</p>
   </div>
   <div class="titleblock">
     <div><b>Project</b><s>Agentic Design Delivery</s></div>
-    <div><b>Sheet title</b><s>Role substitution &amp; savings</s></div>
-    <div><b>Sheet no.</b><s>AR-302A</s></div>
-    <div><b>Rev</b><s>P03</s></div>
+    <div><b>Sheet title</b><s>Capacity released</s></div>
+    <div><b>Sheet no.</b><s>AR-302B</s></div>
+    <div><b>Rev</b><s>P05</s></div>
     <div><b>Status</b><s>S3</s></div>
     <div><b>Date</b><s>2026-09-06</s></div>
   </div>
 </section>
 
 <!-- ============ AR-303 SPEAKING CAD ============ -->
-<section class="sheet" data-no="AR-303" data-title="How agents speak CAD">
+<section class="sheet" data-no="AR-303" data-title="How agents speak CAD 1/2 &#8212; model &amp; production">
   <div class="sheet-body">
-    <p class="eyebrow">Part B / AR-303 / The verb set</p>
-    <h2 class="t">How the agents actually speak CAD</h2>
-    <p class="dek">&ldquo;Speaking CAD&rdquo; is not free-form geometry generation. It is a bounded vocabulary of typed operations, each with a validated argument schema, executed against a real engine and confirmed by a returned element identifier. This table is the contract.</p>
+    <p class="eyebrow">Part B / AR-303 / The verb set, 1 of 2</p>
+    <h2 class="t">How the agents speak CAD &mdash; model and production</h2>
+    <p class="dek">Speaking CAD is a bounded vocabulary of typed operations, each with a validated argument schema, executed against a real engine and confirmed by a returned element identifier. These are the operations that build the model and turn it into sheets. AR-303A covers verification and delivery.</p>
 
     <div class="tbl-wrap">
       <table>
@@ -1464,6 +1478,38 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
           <tr><td class="m">compose_sheet</td><td>sheet number, title block, viewport list, revision</td><td>Revit sheet API; AutoCAD layout via Core Console script</td><td>Sheet id</td></tr>
           <tr><td class="m">annotate</td><td>rule set, dimension strategy, tag family, keynote table</td><td>Revit annotation API / DWG dimension entities</td><td>Annotation ids</td></tr>
           <tr><td class="m">build_schedule</td><td>category, fields, sort, filter, format</td><td>Revit schedule API &rarr; CSV / COBie export</td><td>Schedule id + export</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel blue" style="margin-top:16px">
+      <p class="lbl b">Three execution surfaces, one interface</p>
+      <p style="margin:0; font-size:13.5px"><strong>In-session</strong> &mdash; a Revit add-in or pyRevit Routes REST endpoint driving a live model, for interactive work. <strong>Headless batch</strong> &mdash; APS Automation API for overnight production and checking at scale. <strong>Neutral</strong> &mdash; IFC via IfcOpenShell where no proprietary engine is required. Agents never know which is in use, which is what lets the engine underneath be replaced without touching them.</p>
+    </div>
+  </div>
+  <div class="titleblock">
+    <div><b>Project</b><s>Agentic Design Delivery</s></div>
+    <div><b>Sheet title</b><s>Speaking CAD 1/2</s></div>
+    <div><b>Sheet no.</b><s>AR-303</s></div>
+    <div><b>Rev</b><s>P05</s></div>
+    <div><b>Status</b><s>S3</s></div>
+    <div><b>Date</b><s>2026-09-06</s></div>
+  </div>
+</section>
+
+<section class="sheet" data-no="AR-303A" data-title="How agents speak CAD 2/2 &#8212; check &amp; deliver">
+  <div class="sheet-body">
+    <p class="eyebrow">Part B / AR-303A / The verb set, 2 of 2</p>
+    <h2 class="t">How the agents speak CAD &mdash; check and deliver</h2>
+    <p class="dek">The operations that prove the work and hand it over. Every one of them writes evidence that travels with the deliverable to the human gate.</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th style="width:20%">Operation</th><th style="width:26%">Arguments (validated, unit-carrying)</th>
+          <th style="width:28%">Execution surface</th><th style="width:26%">Returns</th>
+        </tr></thead>
+        <tbody>
           <tr><td class="m">run_clash</td><td>model set, clash matrix, tolerance, grouping rule</td><td>Navisworks / cloud model coordination</td><td>Grouped clash set</td></tr>
           <tr><td class="m">validate_information</td><td>IDS specification, information container</td><td>IDS validator (Solibri or open-source equivalent)</td><td>Pass/fail per requirement</td></tr>
           <tr><td class="m">check_code</td><td>rule pack id, model region</td><td>Rule engine over IFC + parameter graph</td><td>Non-conformance list</td></tr>
@@ -1473,26 +1519,22 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
       </table>
     </div>
 
-    <div class="grid3" style="margin-top:16px">
-      <div class="panel blue">
-        <p class="lbl b">Three execution surfaces, one interface</p>
-        <p style="margin:0; font-size:13px"><strong>In-session</strong> &mdash; a Revit add-in or pyRevit Routes REST endpoint driving a live model, for interactive work. <strong>Headless batch</strong> &mdash; APS Automation API for overnight production and checking at scale. <strong>Neutral</strong> &mdash; IFC via IfcOpenShell where no proprietary engine is required. Agents never know which is in use.</p>
-      </div>
+    <div class="grid2" style="margin-top:18px">
       <div class="panel ochre">
         <p class="lbl o">Standards the industry already gave us</p>
-        <p style="margin:0; font-size:13px">IFC 4 / 4.3 for exchange, IDS 1.0 for machine-readable information requirements, BCF 3.0 for issues, COBie for handover, Uniclass or Omniclass for classification. The agents are built on these rather than on a private schema, which is what keeps the output contractually usable.</p>
+        <p style="margin:0; font-size:13.5px">IFC 4 / 4.3 for exchange, IDS 1.0 for machine-readable information requirements, BCF 3.0 for issues, COBie for handover, Uniclass or Omniclass for classification. The agents are built on these rather than on a private schema, which is what keeps the output contractually usable and portable between the tools your clients and consultants already run.</p>
       </div>
       <div class="panel">
         <p class="lbl">The vendor direction of travel</p>
-        <p style="margin:0; font-size:13px">Autodesk shipped an in-product assistant as a tech preview in 2026 and has signalled a built-in MCP server in the next Revit release, read-only at first. Community MCP servers already drive Revit read-write through pyRevit today. Design the adapter layer so both are behind the same interface.</p>
+        <p style="margin:0; font-size:13.5px">Autodesk shipped an in-product assistant as a tech preview in 2026 and has signalled a built-in MCP server in the next Revit release, read-only at first. Community MCP servers already drive Revit read-write through pyRevit today. The adapter layer is designed so both sit behind the same interface and either can be adopted as it matures.</p>
       </div>
     </div>
   </div>
   <div class="titleblock">
     <div><b>Project</b><s>Agentic Design Delivery</s></div>
-    <div><b>Sheet title</b><s>How agents speak CAD</s></div>
-    <div><b>Sheet no.</b><s>AR-303</s></div>
-    <div><b>Rev</b><s>P01</s></div>
+    <div><b>Sheet title</b><s>Speaking CAD 2/2</s></div>
+    <div><b>Sheet no.</b><s>AR-303A</s></div>
+    <div><b>Rev</b><s>P05</s></div>
     <div><b>Status</b><s>S3</s></div>
     <div><b>Date</b><s>2026-09-06</s></div>
   </div>
@@ -1698,17 +1740,20 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
       </div>
 
       <div>
-        <p class="lbl r">Explicitly out of scope</p>
+        <p class="lbl r">Open items &#8212; ambiguity and TBD</p>
         <div class="panel red" style="margin-bottom:12px">
-          <ul style="margin:0; padding-left:18px; font-size:13.5px; line-height:1.7">
-            <li>Architectural or structural generation of any kind</li>
-            <li>Anything that touches a live authority submission</li>
-            <li>Autonomous issue of drawings &mdash; every sheet is stamped by a human</li>
-            <li>Replacing any existing role or headcount during the pilot</li>
-            <li>Cost, programme or procurement integration</li>
-            <li>Site-facing tools, snagging, as-built capture</li>
-            <li>Any commitment to a long-term vendor before the week-14 gate</li>
-          </ul>
+          <p style="margin:0 0 8px; font-size:13px">Not settled at this stage, and not carried in the estimate. Each needs a decision or better information before it can be scoped:</p>
+          <table style="min-width:0; font-size:13px">
+            <tbody>
+              <tr><td style="width:62%">Architectural and structural generation</td><td class="m">TBD</td></tr>
+              <tr><td>Interface with live authority submissions</td><td class="m">Ambiguity</td></tr>
+              <tr><td>Autonomous issue of drawings without a stamp</td><td class="m">TBD</td></tr>
+              <tr><td>Role and headcount impact</td><td class="m">Client call</td></tr>
+              <tr><td>Cost, programme and procurement integration</td><td class="m">TBD</td></tr>
+              <tr><td>Site tools, snagging, as-built capture</td><td class="m">Not defined</td></tr>
+              <tr><td>Long-term platform commitment</td><td class="m">Week-20 gate</td></tr>
+            </tbody>
+          </table>
         </div>
         <div class="panel">
           <p class="lbl">Shadow-mode discipline</p>
@@ -1956,16 +2001,16 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
 </section>
 
 <!-- ============ PL-405 DEFERRED ============ -->
-<section class="sheet" data-no="PL-405" data-title="Deferred integrations">
+<section class="sheet" data-no="PL-405" data-title="Optional integrations">
   <div class="sheet-body">
     <p class="eyebrow">Part C / PL-405</p>
-    <h2 class="t">What to deliberately not integrate yet</h2>
-    <p class="dek">Each of these is genuinely valuable and will be asked for in the first steering meeting. Each one also adds a system owner, a data-quality dependency and a reason for the pilot to slip. Say no now, with a date.</p>
+    <h2 class="t">Optional integrations</h2>
+    <p class="dek">Each of these adds real value and each adds a system owner and a data-quality dependency. None is required for the POC to prove what it needs to prove, so they sit as options with indicative dates rather than commitments.</p>
 
     <div class="grid2">
       <div class="tbl-wrap">
         <table>
-          <thead><tr><th style="width:34%">Integration</th><th style="width:38%">Why it is tempting</th><th style="width:28%">Why it waits</th></tr></thead>
+          <thead><tr><th style="width:34%">Integration</th><th style="width:38%">Why it is tempting</th><th style="width:28%">Status</th></tr></thead>
           <tbody>
             <tr><td><strong>Procore / Aconex</strong></td><td>Submittals and RFIs live there on many projects</td><td>Second CDE doubles the sync surface. Phase 2</td></tr>
             <tr><td><strong>Primavera P6 / schedule</strong></td><td>Ties drawing release to construction sequence</td><td>Needs a mature WBS-to-drawing mapping you do not have yet</td></tr>
@@ -1979,11 +2024,11 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
       </div>
       <div style="display:flex; flex-direction:column; gap:12px">
         <div class="panel blue">
-          <p class="lbl b">The rule to hold the line with</p>
-          <p style="margin:0; font-size:13.5px">An integration enters the pilot only if an agent in the pilot scope cannot complete its work without it. Every other integration is a Phase 2 line item with a named date, so the answer is &ldquo;in March&rdquo; rather than &ldquo;no&rdquo;.</p>
+          <p class="lbl b">How the line is drawn</p>
+          <p style="margin:0; font-size:13.5px">An integration is in the POC only if an agent in scope cannot complete its work without it. Everything else is optional, with an indicative date attached, so the answer is a sequence rather than a refusal.</p>
         </div>
         <div class="panel ochre">
-          <p class="lbl o">Phase 2 sequencing, if the pilot passes</p>
+          <p class="lbl o">Suggested sequence, if the POC passes</p>
           <p style="margin:0; font-size:13.5px">Bluebeam mark-up ingestion, then Procore or Aconex, then schedule, then cost. Reality capture and FM handover come with the first project that runs the framework end to end, not before.</p>
         </div>
         <div class="panel red">
@@ -1995,7 +2040,7 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
   </div>
   <div class="titleblock">
     <div><b>Project</b><s>Agentic Design Delivery</s></div>
-    <div><b>Sheet title</b><s>Deferred integrations</s></div>
+    <div><b>Sheet title</b><s>Optional integrations</s></div>
     <div><b>Sheet no.</b><s>PL-405</s></div>
     <div><b>Rev</b><s>P01</s></div>
     <div><b>Status</b><s>S3</s></div>
@@ -2181,8 +2226,8 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
         </div>
 
         <div class="panel red">
-          <p class="lbl r">Deliberately not procured in the pilot</p>
-          <p style="margin:0; font-size:13px">Procore or Aconex connector licences, Primavera P6, Bluebeam API, reality-capture and CAFM tooling. All are Phase 2 items on PL-405 with dates, not refusals.</p>
+          <p class="lbl r">Not priced at this stage</p>
+          <p style="margin:0; font-size:13px">Procore or Aconex connector licences, Primavera P6, Bluebeam API, reality-capture and CAFM tooling. All TBD, listed on PL-405 with indicative dates rather than ruled out.</p>
         </div>
       </div>
     </div>
@@ -2230,7 +2275,7 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
 
       <div style="display:flex; flex-direction:column; gap:12px">
         <div class="panel">
-          <p class="lbl">4 &#8212; What the estimate explicitly excludes</p>
+          <p class="lbl">4 &#8212; Not carried in this estimate, to be defined</p>
           <ul style="margin:0; padding-left:17px; font-size:13px; line-height:1.7">
             <li>Client-side manpower &#8212; the 52.4 FTE-weeks on PL-403, block B</li>
             <li>Licences the client already holds</li>
@@ -2413,11 +2458,11 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
 </section>
 
 <!-- ============ RD-601 DECISIONS ============ -->
-<section class="sheet" data-no="RD-601" data-title="Decisions required">
+<section class="sheet" data-no="RD-601" data-title="Next steps">
   <div class="sheet-body">
     <p class="eyebrow">Part D / RD-601</p>
-    <h2 class="t">Decisions required in the next 30 days</h2>
-    <p class="dek">Nothing on this list needs new technology. All of it needs someone senior to decide.</p>
+    <h2 class="t">Next steps</h2>
+    <p class="dek">Nothing here needs new technology. It is the sequence of things to line up before a POC can start.</p>
 
     <ul class="klist" style="max-width:94ch">
       <li><span class="n">01</span><div><b>Name the programme sponsor.</b><span>A design director with the standing to protect SME time and to stop the programme at a gate. Without this the pilot becomes an R&amp;D hobby.</span></div></li>
@@ -2437,7 +2482,7 @@ hr.r{border:0; border-top:1px solid var(--rule); margin:16px 0}
   </div>
   <div class="titleblock">
     <div><b>Project</b><s>Agentic Design Delivery</s></div>
-    <div><b>Sheet title</b><s>Decisions required</s></div>
+    <div><b>Sheet title</b><s>Next steps</s></div>
     <div><b>Sheet no.</b><s>RD-601</s></div>
     <div><b>Rev</b><s>P01</s></div>
     <div><b>Status</b><s>S3</s></div>
